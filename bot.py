@@ -42,11 +42,10 @@ while True:
     "notWithFacets":False,
     "needRemodeledSearchFacets":True,
     "withFallbackToListingMode":False,
-    "metroId":2,
-    "metroIds":[2],
-    "latitude":47.615293,
-    "longitude":
-    -122.308567,
+    "metroId":5,
+    "metroIds":[5],
+    # "latitude":47.615293,
+    # "longitude":-122.308567,
     "tld":"com",
     # "date":"2021-09-08",
     # "time":"19:00",
@@ -55,16 +54,16 @@ while True:
     "onlyPop":False,"includePopRestaurants":True,
     "pinnedRid":None,"shouldIncludeDeliveryDetails":
     True,"shouldIncludeTakeoutDetails":True,
-    "originalTerm":None,"intentModifiedTerm":None,
-    "loyaltyRedemptionTiers":[],
-    "experienceTypeIds":[],
+    "originalTerm":None,
+    "intentModifiedTerm":None,
     "withFacets":False,"withTags":True,
     "withLoyaltyRedemptionFacets":False,
     "withPointRedemptionRewards":False,
     "countryCode":"US"},"extensions":
     {"persistedQuery":{"version":1,
     "sha256Hash":
-    "6422e11e02144f7aa2d89b7c85cccc9303fd9dfcc7b08e3ff6e33adc29e01043"}}}
+    "6422e11e02144f7aa2d89b7c85cccc9303fd9dfcc7b08e3ff6e33adc29e01043"
+    }}}
     data = json.dumps(data_json)
     response = requests.post('https://www.opentable.com/dapi/fe/gql', headers=headers, data=data)
     response_data = response.json()
